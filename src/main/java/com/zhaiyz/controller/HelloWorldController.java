@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.zhaiyz.vo.User;
+
 @Controller
 public class HelloWorldController {
 	
@@ -33,6 +35,11 @@ public class HelloWorldController {
 	@RequestMapping("/fuck")
 	public ModelAndView sayFuck(String message) {
 		return new ModelAndView("hello", "message", message);
+	}
+	
+	@RequestMapping("/user")
+	public ModelAndView printUser(User user) {
+		return new ModelAndView("hello", "message", user);
 	}
 
 }
