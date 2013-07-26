@@ -2,8 +2,8 @@ package com.zhaiyz.vo;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
-public class User {
+@XmlRootElement(name="user")
+public class User{
 
 	private int id;
 	
