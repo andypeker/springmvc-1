@@ -33,7 +33,7 @@
 		<property name="contentNegotiationManager">
             <bean class="org.springframework.web.accept.ContentNegotiationManager">
                 <constructor-arg>
-                    <bean class="org.s=pringframework.web.accept.PathExtensionContentNegotiationStrategy">
+                    <bean class="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
                         <constructor-arg>
                             <map>
                                 <entry key="json" value="application/json"/>
